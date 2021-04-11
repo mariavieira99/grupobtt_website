@@ -1,0 +1,81 @@
+<div id= "first_header" class="container-fluid">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-4">
+      <%= image_tag ("logo.png"), class:"logo" %>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+        <a>
+            <h2 class="text-center slogan"> DESDE 1995 A PEDALAR “NINGUÉM FICA PARA TRÁS” </h2>
+        </a>  
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <%= link_to image_tag("home_icon.png", :class => "home_icon"), root_path, class:"navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        	<%= link_to 'História', home_historia_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Eventos', home_eventos_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+              <a class="percursos_navbar nav-link">Percursos BTT</a>
+              <div class="dropdown-content">
+                <%= link_to 'Rota da Lapa', home_rota_lapa_path %>
+                <div class="dropdown-divider"></div>
+                <%= link_to 'Rota do Sameiro', home_rota_sameiro_path %>
+                <div class="dropdown-divider"></div>
+                <%= link_to 'Rota do Mondego', home_rota_mondego_path %>
+                <div class="dropdown-divider"></div>
+                <%= link_to 'Rota do Vale Glaciar', home_rota_valeglaciar_path %>
+                <div class="dropdown-divider"></div>
+                <%= link_to 'Rota das Penhas Douradas', home_rota_penhasdouradas_path %>
+                <div class="dropdown-divider"></div>
+                <%= link_to 'Rota do Corredor dos Mouros', home_rota_corredormouros_path %>
+              </div>
+          </div>
+          <!--
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Percursos BTT
+          </a>
+
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#" style="color:white">Rota da Lapa</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" style="color:white">Rota do Sameiro</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" style="color:white">Rota do Mondego</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" style="color:white">Rota do Vale Glaciar</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" style="color:white">Rota das Penhas Douradas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" style="color:white">Rota do Corredor dos Mouros</a></li>
+          </ul>
+        -->
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Loja', produtos_path, class:"nav-link" %>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+          <%= link_to 'Órgãos Sociais', home_os_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Contactos', home_contactos_path, class:"nav-link" %>
+        </li>
+     </ul>
+    </div>
+  </div>
+</nav>

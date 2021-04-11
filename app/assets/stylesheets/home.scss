@@ -1,0 +1,311 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden; 
+}
+
+#first_header{
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0) 100%), 
+				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%) , 
+				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), rgba(254, 223, 70, 0.8);
+
+	padding: 15px;
+
+}
+
+.rotas{
+	background: linear-gradient(180deg, #000000 0%, rgba(20, 18, 18, 0.40) 100%), 
+				linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), 
+				linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.62) 100%);
+	padding-top: 50px;
+}
+
+.info_rotas{
+    position:relative;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0) 100%), 
+				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%) , 
+				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), rgba(254, 223, 70, 0.85);
+	padding-bottom: 30px;
+}
+
+.info_rotas:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 50px rgba(254, 223, 70, 0.8);
+    border-left: solid 40px transparent;
+    border-right: solid 40px transparent;
+}
+
+.title_rotas{
+	font-family: Farro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 80px;
+	text-align: center;
+
+	padding-top: 20px;
+	padding-bottom: 40px;
+
+	color: #000000;
+}
+
+.text_rotas{
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+
+	color: #000000;
+}
+
+.types_rotas{
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 50px;
+	display: flex;
+	align-items: center;
+
+	color: #000000;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+  
+#left {
+    margin-left: 70px;
+    /*border: 2px solid white;*/
+    flex: 0 0 45%;
+}
+
+#right {
+    /*border: 2px solid white;*/
+    flex: 1;
+    
+}
+
+.map{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.slogan{
+    font-family: Cairo;
+	font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 94px;
+	text-align: center;
+	color: #000000;
+}
+
+.logo{
+	width: 200px;
+	height: 200px;
+}
+
+.first_image{
+	background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.home_icon{
+	max-height: 30px;
+	width: auto;
+	margin-bottom: 5px;
+	padding-left: 10px;
+}
+
+.navbar {
+	background: black;
+}
+
+.navbar .nav-item .nav-link {
+	color: white;
+	font-family: Farro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.nav-item{
+	padding-left: 10px;
+}
+
+.dropdown-divider{
+	border: 1px solid white;
+}
+
+.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #000000;
+    min-width: 250px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+
+	font-family: Farro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+}
+  
+.dropdown-content a:hover {background-color: white; color: black;}
+.dropdown:hover .dropdown-content {display: block;}
+
+.percursos{
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0) 100%), 
+				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%) , 
+				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), rgba(254, 223, 70, 0.8);
+
+}
+
+.home_title{
+    font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: black;
+	padding-top: 40px;
+	padding-left: 20px;
+}
+
+
+.title_pages{
+	font-family: Farro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 80px;
+	text-align: center;
+
+	padding-top: 20px;
+	padding-bottom: 40px;
+
+	color: #FFFFFF;
+}
+
+.container_yellow{
+    position:relative;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0) 100%), 
+				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%) , 
+				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), rgba(254, 223, 70, 0.85);
+	padding-bottom: 30px;
+}
+
+.container_yellow:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 50px rgba(254, 223, 70, 0.8);
+    border-left: solid 40px transparent;
+    border-right: solid 40px transparent;
+}
+
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("vale-glaciar-do-zezere.png");
+    padding-top: 10px;
+}
+
+.footer_title{
+    font-family: Cairo;
+	font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+}
+
+.footer_description{
+    font-family: Cairo;
+	font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+}
+
+.footer_description1{
+    font-family: Cairo;
+	font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
+}
+
+.separation_footer{
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.fa {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .link_contacto:link{
+    color: black;
+}
