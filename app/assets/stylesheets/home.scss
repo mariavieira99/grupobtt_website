@@ -25,6 +25,15 @@ html,body {
 	padding-top: 50px;
 }
 
+.image_percursos{
+    margin-top: 50px;
+    max-height: 350px;
+    max-width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .info_rotas{
     position:relative;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0) 100%), 
@@ -198,6 +207,7 @@ html,body {
 				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%) , 
 				linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), rgba(254, 223, 70, 0.8);
 
+    padding-bottom: 50px;
 }
 
 .home_title{
