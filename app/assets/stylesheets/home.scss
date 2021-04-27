@@ -327,6 +327,146 @@ html,body {
     border-right: solid 40px transparent;
 }
 
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#left_ano {
+    flex: 0 0 50%;
+}
+
+#left_text {
+    flex: 0 0 50%;
+}
+
+#right_text1::before {
+    background-image: url(roda.png);
+    border-right: 3px solid #FEDF46;
+    content: "";
+    height: 1200px;
+    position: absolute;
+    right: calc((100% - 3px) / 2); // or use '50%' for better compatibility, but less exactness
+}
+.ano_style{
+    font-family: Farro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180px;
+    line-height: 180px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    justify-content: center;
+}
+
+
+#right_text {
+    flex: 1;    
+}
+
+#right_text1 {
+    flex: 1;    
+}
+
+#right_ano {
+    flex: 1;    
+}
+
+.text_container{
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 100%), 
+                linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), #FEDF46;
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: justify;
+
+    color: #000000;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 500px;
+}
+
+.top_fita{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    width: 35%;
+    height: auto;
+    transform: translateY(-70%);
+}
+
+.containers_os{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0) 100%), 
+                linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%) , 
+                linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), rgba(254, 223, 70, 0.85);
+    margin-bottom: 180px;
+}
+
+.title_os{
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 131px;
+    margin-left: 20px;
+    color: #000000;
+}
+
+.nomes_os{
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.titulos_os{
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.nrSocio_os{
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+
+
 .contact{
     margin-top: 20px;
     max-height: 100px;
