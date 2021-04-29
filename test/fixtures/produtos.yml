@@ -2,10 +2,8 @@
 
 one:
   nome: MyString
-  preco: 1.5
-  preco_socio: 1.5
+  image: MyString
 
 two:
   nome: MyString
-  preco: 1.5
-  preco_socio: 1.5
+  image: MyString

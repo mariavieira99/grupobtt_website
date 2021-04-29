@@ -1,3 +1,45 @@
 // Place all the styles related to the produtos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.produto{
+    max-height: 230px;
+    max-width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.border_produto{
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), #FEDF46;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+
+.produto_nome{
+	text-align: center;
+	font-family: Cairo;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 50px;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+}
+
+.product{
+	padding-bottom: 50px;
+}
+
+.produto_nome:link{
+	text-decoration:none;
+}
