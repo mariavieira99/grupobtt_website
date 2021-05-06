@@ -1,4 +1,4 @@
-<div class="container-fluid rotas" style="padding-bottom: 50px;">
+<div class="container-fluid rotas" id="rota" style="padding-bottom: 50px;">
 	<div class="row">
 		<div class="col-12">
 	        <a>
@@ -6,6 +6,98 @@
 	        </a>  
 		</div>
 	</div>
+
+	<div class="container">
+		<div class="main-timeline">
+
+	        <!-- start experience section-->
+	        <div class="timeline">
+    			<%= image_tag ("roda.png"), id: "roda", class:"icon", style:"display:none;" %>
+	            <div class="date-content">
+	                <div class="date-outer">
+	                    <span class="date">
+	                    <span class="year">1995</span>
+	                    </span>
+	                </div>
+	            </div>
+	            <div class="timeline-content">
+	                <p class="description" id="first_container">O Grupo BTT de Manteigas foi constituído em 10 de Abril de 1995, sendo um dos grupos mais antigos de Portugal nesta área de atividade desportiva. Os principais objetivos da criação deste grupo era promover a prática do cicloturismo e do trail, a defesa e a proteção da natureza, do ambiente e divulgar o Concelho de Manteigas e a Região do Parque Natural da Serra da Estrela.
+	                </p>
+	            </div>
+	        </div>
+	        <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline">
+                <div class="date-content">
+                    <div class="date-outer">
+                        <span class="date">
+                        <span class="year">2000</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <p class="description" id="container_2000">
+                        Depois de cinco anos de intensa atividade, e já com a realização de diversas ações desportivas, a requalificação da Casa do Guarda da Fonte Santa, a aquisição diversos materiais de apoio às atividades desenvolvidas, por razões profissionais dos elementos que compunham os órgãos sociais o grupo ficou inativo.
+                    </p>
+                </div>
+            </div>
+            <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline" id="container_2016">
+                <div class="date-content">
+                    <div class="date-outer">
+                        <span class="date">
+                        <span class="year">2016</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <p class="description">
+                         Neste ano, praticantes de BTT de Manteigas, que integravam o grupo de Ciclismo da Associação Desportiva de Manteigas, decidiram reativar o primeiro Grupo de BTT formado em Portugal - Grupo de BTT de Manteigas, com o objectivo recuperar o dinamismo de outrora e potencializar a prática do ciclismo no Concelho de Manteigas.
+                    </p>
+                </div>
+            </div>
+            <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline" id="container_2016_2021">
+                <div class="date-content">
+                    <div class="date-outer">
+                        <span class="date">
+                        <span class="year1">2016|2021</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <p class="description">
+                        Desde a reativação, o grupo tem criado e realizado várias ações desportivas regionais, nacionais bem como internacionais. Algumas destas têm sido promovidas em parceria com as Autarquias locais, com a Associação Desportiva de Manteigas, com a Federação Portuguesa de Ciclismo e ainda com empresas que usualmente patrocinam provas desportivas. Graças a todo este dinamismo e atividades desenvolvidas, o número de praticantes de BTT tem aumentado no Concelho de Manteigas.
+                    </p>
+                </div>
+            </div>
+            <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline">
+                <div class="date-content">
+                    <div class="date-outer">
+                        <span class="date">
+                        <span class="year">2021</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="timeline-content" id="last_container">
+                    <p class="description">
+                        No ano de 2021, os membros do grupo de BTT decidiram apostar na criação de um website onde pudessem publicitar os seus produtos, eventos e ainda, contar a história desta grande família. 
+                    </p>
+                </div>
+            </div>
+            <!-- end experience section-->
+
+        </div>
+	</div>
+	<!--
     <div id="wrapper">
 	    <div id="left_ano">
 	     <div class="row">
@@ -20,7 +112,6 @@
 	        </div>
 	    </div>
   	</div>
-
     <div id="wrapper" style="padding-top: 100px;">
 	    <div id="left_text">
     	<div class="text_container">
@@ -83,5 +174,96 @@
 	        </div>
 	    </div>
   	</div>
+  -->
 
 </div>
+
+
+<script type="text/javascript">
+	window.onload = function () {
+
+		// Get an element's distance from the top of the page
+		var getElemDistance = function ( elem ) {
+		    var location = 0;
+		    if (elem.offsetParent) {
+		        do {
+		            location += elem.offsetTop;
+		            elem = elem.offsetParent;
+		        } while (elem);
+		    }
+		    return location >= 0 ? location : 0;
+		};
+
+	  window.onscroll = function () { 
+
+		var top_position = $("#first_container").offset().top - $("#first_container").height();
+
+		var container_2000 = $("#container_2000").offset().top - $("#container_2000").height();
+		console.log('Top_1995: '+ top_position);
+		console.log('Top_2000: '+ container_2000);
+		console.log('Scroll: '+ $(document).scrollTop());
+
+		console.log('window offset: '+ window.pageYOffset);
+
+	  	var elemento = document.getElementById("roda");
+	  	/*var first_container = document.getElementById("first_container");
+	  	var last_container = document.getElementById("last_container");
+
+	  	var teste = window.pageYOffset + first_container.getBoundingClientRect().top
+
+	  	console.log("teste: " + teste );
+
+	  	console.log("first_container: " + first_container.offsetTop);
+
+	  	console.log("last_container: " + last_container.offsetTop);
+
+
+		var position = window.pageYOffset;
+		console.log("position: " + position);
+	  	var y = window.scrollY;
+
+	  	if (y >= 180 && y <= 1800) {
+	  		elemento.style.display = "block";
+	  		elemento.style.transform = "rotate("+window.pageYOffset+"deg)";
+	  	} else {
+  			elemento.style.display = "none";
+	  	}*/
+
+	  	// Get current location's distance from the top of the page
+		var position = window.pageYOffset;
+
+		var container_2000 = document.getElementById("container_2000");
+		var container_2016 = document.getElementById("container_2016");
+		var container_2016_2021 = document.getElementById("container_2016_2021");
+
+
+		var location_2000 = getElemDistance( container_2000 );
+
+		var location_2016 = getElemDistance( container_2016 );
+
+		var location_2016_2021 = getElemDistance( container_2016_2021 );
+
+
+		//----------------------------------------------------
+	  	var first = document.getElementById("first_container");
+	  	var last = document.getElementById("last_container");
+
+		var location = getElemDistance( first );
+		var location1 = location-first.offsetHeight;
+
+		var location_last = getElemDistance( last );
+		var location1_last = location_last-last.offsetHeight;
+
+		if (position >= location1 && position<=location1_last) {
+	  		elemento.style.display = "block";
+	  		elemento.style.transform = "rotate("+window.pageYOffset+"deg)";
+	  	} else {
+  			elemento.style.display = "none";
+	  	}
+
+		//----------------------------------------------------
+
+	   }
+	   
+	};
+</script>

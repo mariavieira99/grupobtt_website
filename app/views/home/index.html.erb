@@ -22,130 +22,160 @@
 </script>
 
 <div class="container-fluid percursos">
-	<div class="row">
-    	<div class="col-12">
-            <h5 class="home_title">Percursos BTT</h5>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 col-sm-6 col-12"> 
-            <div class="image_show">
-                <%= link_to image_tag("percurso_temp.png", :class => "image_percursos"), home_rota_lapa_path%>
-                <div class="over_image">
-                    <%= link_to home_rota_lapa_path do %>
-                      <div class="text_info_rotas">
-                        <p><b style="font-size: 28px; ">Rota da Lapa</b> </p>
-                        <p><b style="padding-right: 5px;">Distância: </b> 7,6 kms </p>
-                        <p><b style="padding-right: 5px;">Tempo: </b> 1h </p>
-                        <p><b style="padding-right: 5px;">Desnível acumulado: </b> 160m</p>
-                         
 
-                        <p><b style="padding-right: 5px;">Dificuldade: </b> Fácil</p>
-                        </div>
-                    <% end %>
+    <div class="container percursos_block">
+
+    	<div class="row">
+        	<div class="col-12">
+                <h5 class="home_title">Percursos BTT</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12"> 
+                <div class="image_show">
+                    <%= link_to image_tag("percurso_temp.png", :class => "image_percursos"), home_rota_lapa_path%>
+                    <div class="over_image">
+                        <%= link_to home_rota_lapa_path do %>
+                          <div class="text_info_rotas">
+                            <p><b style="font-size: 28px; ">Rota da Lapa</b> </p>
+                            <p><b style="padding-right: 5px;">Distância: </b> 7,6 kms </p>
+                            <p><b style="padding-right: 5px;">Tempo: </b> 1h </p>
+                            <p><b style="padding-right: 5px;">Desnível acumulado: </b> 160m</p>
+                             
+
+                            <p><b style="padding-right: 5px;">Dificuldade: </b> Fácil</p>
+                            </div>
+                        <% end %>
+                        
+                    </div>
                     
                 </div>
-                
             </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 col-12"> 
-            <div class="image_show">
-                <%= link_to image_tag("percurso_temp.png", :class => "image_percursos"), home_rota_sameiro_path%>
-                <div class="over_image">
-                    <%= link_to home_rota_sameiro_path do %>
-                        <div class="text_info_rotas">
-                         <p><b style="font-size: 28px;">Rota do Sameiro</b> </p>
-                            <p><b style="padding-right: 5px;">Distância: </b> 14,5 kms </p>
-                            <p><b style="padding-right: 5px;">Tempo: </b> 1h15 a 2h00 </p>
-                            <p><b style="padding-right: 5px;">Desnível acumulado: </b> 340m</p>
-                             
+            <div class="col-md-4 col-sm-6 col-12"> 
+                <div class="image_show">
+                    <%= link_to image_tag("rotas/sameiro.png", :class => "image_percursos"), home_rota_sameiro_path%>
+                    <div class="over_image">
+                        <%= link_to home_rota_sameiro_path do %>
+                            <div class="text_info_rotas">
+                             <p><b style="font-size: 28px;">Rota do Sameiro</b> </p>
+                                <p><b style="padding-right: 5px;">Distância: </b> 14,5 kms </p>
+                                <p><b style="padding-right: 5px;">Tempo: </b> 1h15 a 2h00 </p>
+                                <p><b style="padding-right: 5px;">Desnível acumulado: </b> 340m</p>
+                                 
 
-                            <p><b style="padding-right: 5px;">Dificuldade: </b> Média</p>
-                        </div>
-                    <% end %>
+                                <p><b style="padding-right: 5px;">Dificuldade: </b> Média</p>
+                            </div>
+                        <% end %>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 col-12"> 
-            <div class="image_show">
-                <%= link_to image_tag("percurso_temp.png", :class => "image_percursos"), home_rota_mondego_path%>
-                <div class="over_image">
+            <div class="col-md-4 col-sm-6 col-12"> 
+                <div class="image_show">
+                    <%= link_to image_tag("percurso_temp.png", :class => "image_percursos"), home_rota_mondego_path%>
+                    <div class="over_image">
 
-                    <%= link_to home_rota_mondego_path do %>
-                        <div class="text_info_rotas">
-                        <p><b style="font-size: 28px;">Rota do Mondego</b> </p>
-                            <p><b style="padding-right: 5px;">Distância: </b>  69,6 kms </p>
-                            <p><b style="padding-right: 5px;">Tempo: </b> 6h00 a 8h00 </p>
-                            <p><b style="padding-right: 5px;">Desnível acumulado: </b> 1771m</p>
-                             
+                        <%= link_to home_rota_mondego_path do %>
+                            <div class="text_info_rotas">
+                            <p><b style="font-size: 28px;">Rota do Mondego</b> </p>
+                                <p><b style="padding-right: 5px;">Distância: </b>  69,6 kms </p>
+                                <p><b style="padding-right: 5px;">Tempo: </b> 6h00 a 8h00 </p>
+                                <p><b style="padding-right: 5px;">Desnível acumulado: </b> 1771m</p>
+                                 
 
-                            <p><b style="padding-right: 5px;">Dificuldade: </b> Muito Difícil </p>
-                        </div>
+                                <p><b style="padding-right: 5px;">Dificuldade: </b> Muito Difícil </p>
+                            </div>
 
-                    <% end %>
+                        <% end %>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 col-12"> 
-            <div class="image_show">
-                <%= link_to image_tag("percurso_temp.png", :class => "image_percursos"), home_rota_valeglaciar_path%>
-                <div class="over_image">
-                    <%= link_to home_rota_valeglaciar_path do %>
-                        <div class="text_info_rotas">
-                        <p><b style="font-size: 28px;">Rota do Vale Glaciar</b> </p>
-                            <p><b style="padding-right: 5px;">Distância: </b>  32,6 kms </p>
-                            <p><b style="padding-right: 5px;">Tempo: </b> 3h00 a 4h00 </p>
-                            <p><b style="padding-right: 5px;">Desnível acumulado: </b> 1000m</p>
-                             
+            <div class="col-md-4 col-sm-6 col-12"> 
+                <div class="image_show">
+                    <%= link_to image_tag("rotas/vale_glaciar.png", :class => "image_percursos"), home_rota_valeglaciar_path%>
+                    <div class="over_image">
+                        <%= link_to home_rota_valeglaciar_path do %>
+                            <div class="text_info_rotas">
+                            <p><b style="font-size: 28px;">Rota do Vale Glaciar</b> </p>
+                                <p><b style="padding-right: 5px;">Distância: </b>  32,6 kms </p>
+                                <p><b style="padding-right: 5px;">Tempo: </b> 3h00 a 4h00 </p>
+                                <p><b style="padding-right: 5px;">Desnível acumulado: </b> 1000m</p>
+                                 
 
-                            <p><b style="padding-right: 5px;">Dificuldade: </b> Difícil </p>
-                        </div>
+                                <p><b style="padding-right: 5px;">Dificuldade: </b> Difícil </p>
+                            </div>
 
-                    <% end %>
+                        <% end %>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 col-12"> 
-            <div class="image_show">
-                <%= link_to image_tag("percurso_temp.png", :class => "image_percursos"), home_rota_penhasdouradas_path%>
-                <div class="over_image">
-                    <%= link_to home_rota_penhasdouradas_path do %>
-                        <div class="text_info_rotas"> <p><b style="font-size: 28px;">Rota das Penhas Douradas</b> </p>
-                            <p><b style="padding-right: 5px;">Distância: </b>  65,8 kms </p>
-                            <p><b style="padding-right: 5px;">Tempo: </b> 6h00 a 8h00 </p>
-                            <p><b style="padding-right: 5px;">Desnível acumulado: </b> 2050m</p>
-                             
+            <div class="col-md-4 col-sm-6 col-12"> 
+                <div class="image_show">
+                    <%= link_to image_tag("percurso_temp.png", :class => "image_percursos"), home_rota_penhasdouradas_path%>
+                    <div class="over_image">
+                        <%= link_to home_rota_penhasdouradas_path do %>
+                            <div class="text_info_rotas"> <p><b style="font-size: 28px;">Rota das Penhas Douradas</b> </p>
+                                <p><b style="padding-right: 5px;">Distância: </b>  65,8 kms </p>
+                                <p><b style="padding-right: 5px;">Tempo: </b> 6h00 a 8h00 </p>
+                                <p><b style="padding-right: 5px;">Desnível acumulado: </b> 2050m</p>
+                                 
 
-                            <p><b style="padding-right: 5px;">Dificuldade: </b> Muito Difícil </p>
-                        </div>
+                                <p><b style="padding-right: 5px;">Dificuldade: </b> Muito Difícil </p>
+                            </div>
 
-                    <% end %>
+                        <% end %>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-4 col-sm-6 col-12"> 
-            <div class="image_show">
-                <%= link_to image_tag("percurso_temp.png", :class => "image_percursos"), home_rota_corredormouros_path%>
-                <div class="over_image">
-                    <%= link_to home_rota_corredormouros_path do %>
-                        <div class="text_info_rotas"> <p><b style="font-size: 28px;">Rota do Corredor dos Mouros</b> </p>
-                            <p><b style="padding-right: 5px;">Distância: </b>  33,9 kms </p>
-                            <p><b style="padding-right: 5px;">Tempo: </b> 3h00 a 4h00 </p>
-                            <p><b style="padding-right: 5px;">Desnível acumulado: </b> 1050m</p>
-                             
+            <div class="col-md-4 col-sm-6 col-12"> 
+                <div class="image_show">
+                    <%= link_to image_tag("rotas/corredor_mouros.png", :class => "image_percursos"), home_rota_corredormouros_path%>
+                    <div class="over_image">
+                        <%= link_to home_rota_corredormouros_path do %>
+                            <div class="text_info_rotas"> <p><b style="font-size: 28px;">Rota do Corredor dos Mouros</b> </p>
+                                <p><b style="padding-right: 5px;">Distância: </b>  33,9 kms </p>
+                                <p><b style="padding-right: 5px;">Tempo: </b> 3h00 a 4h00 </p>
+                                <p><b style="padding-right: 5px;">Desnível acumulado: </b> 1050m</p>
+                                 
 
-                            <p><b style="padding-right: 5px;">Dificuldade: </b> Difícil </p>
-                        </div>
-                    <% end %>
+                                <p><b style="padding-right: 5px;">Dificuldade: </b> Difícil </p>
+                            </div>
+                        <% end %>
+                    </div>
                 </div>
             </div>
+                    
+         </div>
+    </div>
+
+    <div class="container patrocinios">
+        <div class="row">
+            <h2 class="patrocinios_nome">Patrocínios</h2>
         </div>
-                
-     </div>
+        <div class="row">
+            <div class="col-4 col-md-2">
+                <%= image_tag ("patrocinios/silvia_massano.png"), class:"foto_patrocinios" %>
+            </div>
+            <div class="col-4 col-md-2">
+                <%= image_tag ("patrocinios/sao_pedro.png"), class:"foto_patrocinios" %>      
+            </div>
+            <div class="col-4 col-md-2">
+                <%= image_tag ("patrocinios/aj_correia.png"), class:"foto_patrocinios" %>      
+            </div>
+            <div class="col-4 col-md-2">
+                <%= image_tag ("patrocinios/vale_amoreira.png"), class:"foto_patrocinios" %>      
+            </div>
+            <div class="col-4 col-md-2">
+                <%= image_tag ("patrocinios/manteigas.png"), class:"foto_patrocinios" %>      
+            </div>
+            <div class="col-4 col-md-2">
+                <%= image_tag ("patrocinios/sameiro.png"), class:"foto_patrocinios" %>      
+            </div>
+        </div>
+    </div>
 
  </div>
