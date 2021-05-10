@@ -49,8 +49,17 @@ html,body {
 }
 
 .foto_patrocinios{
-    max-height: 200px;
-    max-width: auto;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto_patrocinios1{
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .patrocinios_nome{
@@ -218,7 +227,7 @@ html,body {
 	font-style: normal;
     font-weight: bold;
     font-size: 35px;
-    line-height: 94px;
+    line-height: 80px;
 	text-align: center;
 	color: #000000;
 }
@@ -226,6 +235,10 @@ html,body {
 .logo{
 	width: 200px;
 	height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .background{
@@ -253,8 +266,8 @@ html,body {
     content:'';
     position: absolute;
     top: 100%;
+    transform: translateX(-50%);
     left: 50%;
-    margin-left: -50px;
     width: 0;
     height: 0;
     border-top: solid 50px rgba(254, 223, 70, 0.8);
@@ -390,7 +403,7 @@ html,body {
 .main-timeline:before {
     content: "";
     display: block;
-    width: 2px;
+    width: 3px;
     height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), #FEDF46;
     margin: 0 auto;
@@ -552,7 +565,7 @@ html,body {
     font-family: Cairo;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 30px;
     text-align: justify;
 
@@ -720,14 +733,7 @@ html,body {
     margin-left: auto;
     margin-right: auto;
 
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-
+    transform: translateX(-50%);
     width: 35%;
     height: auto;
     transform: translateY(-70%);
@@ -891,3 +897,257 @@ html,body {
   .link_contacto:link{
     color: black;
 }
+
+
+@media screen and (max-width: 1050px) {
+    .slogan{
+        font-size: 26px;
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .slogan{
+        line-height: 60px;
+    }
+    .logo{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .slogan{
+        line-height: 60px;
+    }
+    .logo{
+        width: 180px;
+        height: 180px;
+    }
+
+    .patrocinios{
+        padding-top:150px;
+    }
+
+}
+
+@media screen and (max-width: 890px) {
+    .slogan{
+        font-size: 24px;
+        line-height: 55px;
+    }
+    .logo{
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slogan{
+        font-size: 24px;
+        line-height: 55px;
+    }
+    .logo{
+        width: 160px;
+        height: 160px;
+    }
+    .logo1{
+        display: none;
+    }
+    .background:after {
+        border-top: solid 40px rgba(254, 223, 70, 0.8);
+        border-left: solid 30px transparent;
+        border-right: solid 30px transparent;
+    }
+
+    .percursos{
+        padding-top: 100px;
+    }
+
+    .home_title{
+        font-size: 30px;
+    }
+
+    .foto_patrocinios{
+        margin-top: 30px;
+    }
+
+    .footer_title{
+        font-size: 30px;
+    }
+
+    .footer_description{
+        font-size: 18px;
+    }
+
+    .footer_description1{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .slogan{
+        font-size: 22px;
+        line-height: 52px;
+    }
+    .logo{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .slogan{
+        font-size: 20px;
+        line-height: 45px;
+    }
+    .logo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .background:after {
+        border-top: solid 35px rgba(254, 223, 70, 0.8);
+        border-left: solid 25px transparent;
+        border-right: solid 25px transparent;
+    }
+
+    .footer_title{
+        font-size: 27px;
+    }
+
+    .footer_description{
+        font-size: 16px;
+    }
+
+    .footer_description1{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .slogan{
+        font-size: 18px;
+        line-height: 42px;
+    }
+    .logo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .percursos{
+        padding-top: 70px;
+    }
+
+    .home_title{
+        font-size: 25px;
+    }
+
+    .patrocinios_nome{
+        font-size: 28px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .slogan{
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    .background:after {
+        border-top: solid 25px rgba(254, 223, 70, 0.8);
+        border-left: solid 25px transparent;
+        border-right: solid 25px transparent;
+    }
+
+    .patrocinios_nome{
+        font-size: 25px;
+    }
+
+    .patrocinios{
+        padding-top:100px;
+    }
+
+    .footer_title{
+        font-size: 24px;
+    }
+
+    .footer_description{
+        font-size: 15px;
+    }
+
+    .footer_description1{
+        font-size: 13px;
+    }
+
+    .fa {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+      }
+}
+
+@media screen and (max-width: 340px) {
+    .slogan{
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer_title{
+        font-size: 23px;
+    }
+
+    .footer_description{
+        font-size: 14px;
+    }
+
+    .footer_description1{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .slogan{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    .patrocinios_nome{
+        font-size: 22px;
+    }
+
+    .home_title{
+        font-size: 20px;
+    }
+
+    .footer_title{
+        font-size: 22px;
+    }
+
+    .footer_description{
+        font-size: 12px;
+    }
+
+    .footer_description1{
+        font-size: 11px;
+    }
+}
+
+
+

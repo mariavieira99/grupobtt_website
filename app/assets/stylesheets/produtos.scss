@@ -4,24 +4,12 @@
 
 
 .produto{
-    max-height: 230px;
-    max-width: auto;
+    height: 400px;
+    width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
-
-.border_produto{
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FEDF46 0%, rgba(255, 255, 255, 0) 100%), #FEDF46;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 60px;
-    padding-top: 60px;
-}
-
 
 .produto_nome{
 	text-align: center;
@@ -30,9 +18,6 @@
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 50px;
-	/* identical to box height */
-
-
 	color: #FFFFFF;
 }
 
@@ -40,6 +25,77 @@
 	padding-bottom: 50px;
 }
 
-.produto_nome:link{
-	text-decoration:none;
+.title_loja{
+	font-family: Farro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 80px;
+	text-align: center;
+
+	padding-top: 20px;
+	padding-bottom: 40px;
+
+	color: #FFFFFF;
 }
+
+@media screen and (max-width: 1100px) {
+	.produto{
+	    height: 350px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.produto{
+	    height: 280px;
+	}
+
+	.title_loja{
+		padding-top: 1px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.produto{
+	    height: 200px;
+	}
+
+	.produto_nome{
+		font-size: 25px;
+	}
+
+	.product{
+		padding-bottom: 30px;
+	}
+
+	.title_loja{
+		font-size: 40px;
+		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	.produto{
+	    height: 170px;
+	}
+
+	.produto_nome{
+		font-size: 22px;
+	}
+
+	.title_loja{
+		font-size: 35px;
+		padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 250px) {
+	.produto{
+	    height: 130px;
+	}
+
+	.produto_nome{
+		font-size: 20px;
+	}
+}
+
