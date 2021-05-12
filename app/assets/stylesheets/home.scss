@@ -150,8 +150,8 @@ html,body {
     content:'';
     position: absolute;
     top: 100%;
+    transform: translateX(-50%);
     left: 50%;
-    margin-left: -50px;
     width: 0;
     height: 0;
     border-top: solid 50px rgba(254, 223, 70, 0.8);
@@ -1010,6 +1010,22 @@ address .text_contactos:hover {
     .containers_os{
         margin-bottom: 150px;
     }
+
+    .image_rota{
+      height: 250px;
+      width: 250px;
+    }
+
+    .types_rotas{
+        font-size: 22px;
+        line-height: 45px;
+    }
+
+
+    .text_rotas{
+        font-size: 19px;
+        line-height: 28px;
+    }
 }
 
 @media screen and (max-width: 890px) {
@@ -1136,6 +1152,53 @@ address .text_contactos:hover {
     .transform_os{
         transform: translateY(-60%);
     }
+
+    #wrapper { 
+        flex-wrap: wrap;
+    }
+
+    #left { 
+        flex-basis: 100%;
+        margin-left: 0px; 
+        margin-bottom: 30px;
+    }
+
+    .image_rota{
+      height: 230px;
+      width: 230px;
+    }
+
+    .types_rotas{
+        justify-content: center;
+        font-size: 22px;
+        line-height: 1px;
+        color: white;
+        background: linear-gradient(180deg, #000000 0%, rgba(20, 18, 18, 0.40) 100%), 
+                linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), 
+                linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.62) 100%);
+        padding: 20px;
+    }
+
+    .text_rotas{
+        font-size: 19px;
+        line-height: 28px;
+    }
+
+    .title_rotas{
+        font-size: 45px;
+        line-height: 80px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        color: #000000;
+    }
+
+    .info_rotas:after {
+        border-top: solid 40px rgba(254, 223, 70, 0.8);
+        border-left: solid 35px transparent;
+        border-right: solid 35px transparent;
+    }
 }
 
 @media screen and (max-width: 630px) {
@@ -1208,6 +1271,37 @@ address .text_contactos:hover {
         transform: translateY(-50%);
     }
 
+    .image_rota{
+      height: 200px;
+      width: 200px;
+    }
+
+    .types_rotas{
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .text_rotas{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .title_rotas{
+        font-size: 40px;
+        line-height: 75px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        color: #000000;
+    }
+
+    .info_rotas:after {
+        border-top: solid 35px rgba(254, 223, 70, 0.8);
+        border-left: solid 30px transparent;
+        border-right: solid 30px transparent;
+    }
+
 }
 
 @media screen and (max-width: 470px) {
@@ -1274,6 +1368,36 @@ address .text_contactos:hover {
 
     .transform_os{
         transform: translateY(-50%);
+    }
+
+    .image_rota{
+      height: 200px;
+      width: 200px;
+    }
+
+    .types_rotas{
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .text_rotas{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .title_rotas{
+        font-size: 35px;
+        line-height: 50px;
+
+        padding-top: 20px;
+
+        color: #000000;
+    }
+
+    .info_rotas:after {
+        border-top: solid 30px rgba(254, 223, 70, 0.8);
+        border-left: solid 25px transparent;
+        border-right: solid 25px transparent;
     }
 }
 
@@ -1468,9 +1592,39 @@ address .text_contactos:hover {
     .transform_os{
         transform: translateY(-30%);
     }
+
+    .image_rota{
+      height: 180px;
+      width: 180px;
+    }
+
+    .types_rotas{
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .text_rotas{
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .title_rotas{
+        font-size: 30px;
+        line-height: 45px;
+
+        padding-top: 20px;
+
+        color: #000000;
+    }
+
+    .info_rotas:after {
+        border-top: solid 30px rgba(254, 223, 70, 0.8);
+        border-left: solid 25px transparent;
+        border-right: solid 25px transparent;
+    }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 305px) {
     .slogan{
         font-size: 12px;
         line-height: 25px;
@@ -1507,6 +1661,12 @@ address .text_contactos:hover {
     .title_pages{
         font-size: 34px;
     }
+
+    .types_rotas{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
 }
 
 
