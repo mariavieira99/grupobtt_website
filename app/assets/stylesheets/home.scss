@@ -372,6 +372,8 @@ html,body {
 	padding-bottom: 40px;
 
 	color: #FFFFFF;
+    
+    text-transform: uppercase;
 }
 
 .container_yellow{
@@ -734,9 +736,17 @@ html,body {
     margin-right: auto;
 
     transform: translateX(-50%);
-    width: 35%;
+    width: 32%;
     height: auto;
     transform: translateY(-70%);
+}
+
+.transform_os{
+    transform: translateY(-70%);
+}
+
+.transform_os1{
+    transform: translateY(-20%);
 }
 
 .containers_os{
@@ -747,20 +757,33 @@ html,body {
 }
 
 .title_os{
-    font-family: Cairo;
+    /*font-family: Cairo;
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
-    line-height: 131px;
+    font-size: 55px;
+    line-height: 130px;
     margin-left: 20px;
     color: #000000;
+    text-transform: uppercase;*/
+
+    font-family: Chakra Petch;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 130px;
+    /* identical to box height */
+
+
+    margin-left: 20px;
+    color: #000000;
+    text-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
 .nomes_os{
     font-family: Cairo;
     font-style: normal;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 33px;
     line-height: 40px;
     text-align: center;
 
@@ -770,8 +793,8 @@ html,body {
 .titulos_os{
     font-family: Cairo;
     font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 28px;
     line-height: 40px;
     text-align: center;
 
@@ -782,7 +805,7 @@ html,body {
     font-family: Cairo;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 10px;
     text-align: center;
 
@@ -958,6 +981,35 @@ address .text_contactos:hover {
     .content_right{
         border-right: none;
     }
+
+    .top_fita{
+        width: 40%;
+    }
+
+    .title_os{
+        font-size: 60px;
+        line-height: 120px;
+    }
+
+    .nomes_os{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .titulos_os{
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    .nrSocio_os{
+        font-size: 18px;
+        line-height: 10px;
+        padding-bottom: 30px;
+    }
+
+    .containers_os{
+        margin-bottom: 150px;
+    }
 }
 
 @media screen and (max-width: 890px) {
@@ -1054,6 +1106,36 @@ address .text_contactos:hover {
         border-right: solid 35px transparent;
     }
 
+    .top_fita{
+        width: 55%;
+    }
+
+    .title_os{
+        font-size: 50px;
+        padding-bottom: 30px;
+
+        text-align: center;
+
+        margin-left: none;
+    }
+
+    .nomes_os{
+        font-size: 27px;
+    }
+
+    .titulos_os{
+        font-size: 23px;
+    }
+
+    .nrSocio_os{
+        font-size: 17px;
+        line-height: 10px;
+        padding-bottom: 30px;
+    }
+
+    .transform_os{
+        transform: translateY(-60%);
+    }
 }
 
 @media screen and (max-width: 630px) {
@@ -1100,6 +1182,31 @@ address .text_contactos:hover {
         font-size: 13px;
     }
 
+    .top_fita{
+        width: 65%;
+    }
+
+    .title_os{
+        font-size: 45px;
+        padding-bottom: 30px;
+    }
+
+    .nomes_os{
+        font-size: 25px;
+    }
+
+    .titulos_os{
+        font-size: 22px;
+    }
+
+    .nrSocio_os{
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+    .transform_os{
+        transform: translateY(-50%);
+    }
 
 }
 
@@ -1141,6 +1248,33 @@ address .text_contactos:hover {
         border-left: solid 28px transparent;
         border-right: solid 28px transparent;
     }
+
+    .top_fita{
+        width: 72%;
+    }
+
+    .title_os{
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+
+    .nomes_os{
+        font-size: 24px;
+    }
+
+    .titulos_os{
+        font-size: 20px;
+    }
+
+    .nrSocio_os{
+        font-size: 16px;
+        line-height: 10px;
+        padding-bottom: 30px;
+    }
+
+    .transform_os{
+        transform: translateY(-50%);
+    }
 }
 
 
@@ -1156,6 +1290,31 @@ address .text_contactos:hover {
     .text_contactos{
         line-height: 15px;
         font-size: 17px;
+    }
+
+    .top_fita{
+        width: 75%;
+    }
+
+    .title_os{
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+
+    .nomes_os{
+        font-size: 22px;
+    }
+
+    .titulos_os{
+        font-size: 19px;
+    }
+
+    .nrSocio_os{
+        font-size: 14px;
+    }
+
+    .transform_os{
+        transform: translateY(-50%);
     }
 }
 
@@ -1203,10 +1362,37 @@ address .text_contactos:hover {
         font-size: 16px;
       }
 
+    .top_fita{
+        width: 80%;
+    }
+
+    .title_os{
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 110px;
+    }
+
+    .nomes_os{
+        font-size: 22px;
+        line-height: 20px;
+    }
+
+    .titulos_os{
+        font-size: 19px;
+    }
+
+    .nrSocio_os{
+        font-size: 14px;
+    }
+
+    .transform_os{
+        transform: translateY(-30%);
+    }
+
 
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 344px) {
     .slogan{
         font-size: 14px;
         line-height: 40px;
@@ -1254,6 +1440,33 @@ address .text_contactos:hover {
         border-top: solid 25px rgba(254, 223, 70, 0.8);
         border-left: solid 25px transparent;
         border-right: solid 25px transparent;
+    }
+
+    .top_fita{
+        width: 90%;
+    }
+
+    .title_os{
+        font-size: 27px;
+        line-height: 40px;
+        padding-bottom: 110px;
+    }
+
+    .nomes_os{
+        font-size: 21px;
+        line-height: 20px;
+    }
+
+    .titulos_os{
+        font-size: 18px;
+    }
+
+    .nrSocio_os{
+        font-size: 14px;
+    }
+
+    .transform_os{
+        transform: translateY(-30%);
     }
 }
 
