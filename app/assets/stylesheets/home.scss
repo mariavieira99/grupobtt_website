@@ -742,11 +742,11 @@ html,body {
 }
 
 .transform_os{
-    transform: translateY(-70%);
+    transform: translateY(-40%);
 }
 
 .transform_os1{
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .containers_os{
@@ -1368,6 +1368,10 @@ address .text_contactos:hover {
 
     .transform_os{
         transform: translateY(-50%);
+    }
+
+    .transform_os1{
+        transform: translateY(-15%);
     }
 
     .image_rota{
