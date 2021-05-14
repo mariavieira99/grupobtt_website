@@ -12,7 +12,7 @@
 
 	        <!-- start experience section-->
 	        <div class="timeline" >
-    			<%= image_tag ("roda.png"), id: "roda", class:"icon", style:"display:none;" %>
+    			<%= image_tag ("roda.png"), id: "roda", class:"icon" %>
 	            <div class="date-content js--fadeInLeft">
 	                <div class="date-outer">
 	                    <span class="date">
@@ -29,6 +29,7 @@
 
             <!-- start experience section-->
             <div class="timeline">
+    			<%= image_tag ("roda.png"), id: "roda", class:"icon" %>
                 <div class="date-content js--fadeInRight">
                     <div class="date-outer">
                         <span class="date">
@@ -46,6 +47,7 @@
 
             <!-- start experience section-->
             <div class="timeline" id="container_2016">
+    			<%= image_tag ("roda.png"), id: "roda", class:"icon" %>
                 <div class="date-content js--fadeInLeft">
                     <div class="date-outer">
                         <span class="date">
@@ -63,6 +65,7 @@
 
             <!-- start experience section-->
             <div class="timeline" id="container_2016_2021">
+    			<%= image_tag ("roda.png"), id: "roda", class:"icon" %>
                 <div class="date-content js--fadeInRight">
                     <div class="date-outer">
                         <span class="date">
@@ -80,6 +83,7 @@
 
             <!-- start experience section-->
             <div class="timeline">
+    			<%= image_tag ("roda.png"), id: "roda", class:"icon" %>
                 <div class="date-content js--fadeInLeft">
                     <div class="date-outer">
                         <span class="date">
@@ -97,84 +101,6 @@
 
         </div>
 	</div>
-	<!--
-    <div id="wrapper">
-	    <div id="left_ano">
-	     <div class="row">
-	     	<div class="col-12">
-	     		<p class="ano_style">1995</p>
-	     	</div>
-	     </div>
-	    </div>
-	    <div id="right_text1">
-	        <div class="text_container">
-	        	O Grupo BTT de Manteigas foi constituído em 10 de Abril de 1995, sendo um dos grupos mais antigos de Portugal nesta área de atividade desportiva. Os principais objetivos da criação deste grupo era promover a prática do cicloturismo e do trail, a defesa e a proteção da natureza, do ambiente e divulgar o Concelho de Manteigas e a Região do Parque Natural da Serra da Estrela.
-	        </div>
-	    </div>
-  	</div>
-    <div id="wrapper" style="padding-top: 100px;">
-	    <div id="left_text">
-    	<div class="text_container">
-        	 Depois de cinco anos de intensa atividade, e já com a realização de diversas ações desportivas, a requalificação da Casa do Guarda da Fonte Santa, a aquisição diversos materiais de apoio às atividades desenvolvidas, por razões profissionais dos elementos que compunham os órgãos sociais o grupo ficou inativo.
-        </div>
-	     
-	    </div>
-
-	    <div id="right_ano">
-	        <div class="row">
-		     	<div class="col-12">
-		     		<p class="ano_style">2000</p>
-		     	</div>
-		    </div>
-	    </div>
-  	</div>
-    <div id="wrapper" style="padding-top: 100px;">
-	    <div id="left_ano">
-	     <div class="row">
-	     	<div class="col-12">
-	     		<p class="ano_style">2016</p>
-	     	</div>
-	     </div>
-	    </div>
-
-	    <div id="right_text">
-	        <div class="text_container">
-	        	 Neste ano, praticantes de BTT de Manteigas, que integravam o grupo de Ciclismo da Associação Desportiva de Manteigas, decidiram reativar o primeiro Grupo de BTT formado em Portugal - Grupo de BTT de Manteigas, com o objectivo recuperar o dinamismo de outrora e potencializar a prática do ciclismo no Concelho de Manteigas.
-	        </div>
-	    </div>
-  	</div>
-    <div id="wrapper" style="padding-top: 100px;">
-	    <div id="left_text">
-    	<div class="text_container">
-        	 Depois de cinco anos de intensa atividade, e já com a realização de diversas ações desportivas, a requalificação da Casa do Guarda da Fonte Santa, a aquisição diversos materiais de apoio às atividades desenvolvidas, por razões profissionais dos elementos que compunham os órgãos sociais o grupo ficou inativo.
-        </div>
-	     
-	    </div>
-
-	    <div id="right_ano">
-	        <div class="row">
-		     	<div class="col-12">
-		     		<p class="ano_style">2016  2021</p>
-		     	</div>
-		    </div>
-	    </div>
-  	</div>
-  	<div id="wrapper" style="padding-top: 100px;">
-	    <div id="left_ano">
-	     <div class="row">
-	     	<div class="col-12">
-	     		<p class="ano_style">2021</p>
-	     	</div>
-	     </div>
-	    </div>
-
-	    <div id="right_text">
-	        <div class="text_container">
-	        	 No ano de 2021, os membros do grupo de BTT decidiram apostar na criação de um website onde pudessem publicitar os seus produtos, eventos e ainda, contar a história desta grande família. 
-	        </div>
-	    </div>
-  	</div>
-  -->
 
 </div>
 
@@ -269,11 +195,11 @@
 </script>
 -->
 
-<script type="text/javascript">
-	
-	window.onload = function () {
-		$(function(){
 
+<script type="text/javascript">
+	//https://www.sliderrevolution.com/resources/css-timeline/
+	$(document).ready(function(){
+		$(function(){
 		  window.sr = ScrollReveal();
 
 		  if ($(window).width() < 768) {
@@ -323,6 +249,15 @@
 
 
 		});
-	}
+
+
+	  	window.onscroll = function () {
+	  		var elemento_class = document.getElementsByClassName("icon");
+	  		for (i = 0; i < elemento_class.length; i++) {
+			  elemento_class[i].style.transform = "translateX(-50%) rotate("+window.pageYOffset+"deg)";
+			}
+
+	  	}
+	});
 
 </script>
