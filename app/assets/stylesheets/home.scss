@@ -416,7 +416,7 @@ html,body {
 }
 
 .main-timeline .timeline {
-    margin-bottom: 40px;
+    margin-bottom: 150px;
     position: relative
 }
 
@@ -682,6 +682,7 @@ html,body {
     height: 1200px;
     position: absolute;
     right: calc((100% - 3px) / 2); // or use '50%' for better compatibility, but less exactness
+    overflow-y: visible !important;
 }
 .ano_style{
     font-family: Farro;

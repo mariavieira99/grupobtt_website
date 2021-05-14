@@ -11,16 +11,16 @@
 		<div class="main-timeline">
 
 	        <!-- start experience section-->
-	        <div class="timeline">
+	        <div class="timeline" >
     			<%= image_tag ("roda.png"), id: "roda", class:"icon", style:"display:none;" %>
-	            <div class="date-content">
+	            <div class="date-content js--fadeInLeft">
 	                <div class="date-outer">
 	                    <span class="date">
 	                    <span class="year">1995</span>
 	                    </span>
 	                </div>
 	            </div>
-	            <div class="timeline-content">
+	            <div class="timeline-content js--fadeInRight">
 	                <p class="description" id="first_container">O Grupo BTT de Manteigas foi constituído em 10 de Abril de 1995, sendo um dos grupos mais antigos de Portugal nesta área de atividade desportiva. Os principais objetivos da criação deste grupo era promover a prática do cicloturismo e do trail, a defesa e a proteção da natureza, do ambiente e divulgar o Concelho de Manteigas e a Região do Parque Natural da Serra da Estrela.
 	                </p>
 	            </div>
@@ -29,14 +29,14 @@
 
             <!-- start experience section-->
             <div class="timeline">
-                <div class="date-content">
+                <div class="date-content js--fadeInRight">
                     <div class="date-outer">
                         <span class="date">
                         <span class="year">2000</span>
                         </span>
                     </div>
                 </div>
-                <div class="timeline-content">
+                <div class="timeline-content js--fadeInLeft">
                     <p class="description" id="container_2000">
                         Depois de cinco anos de intensa atividade, e já com a realização de diversas ações desportivas, a requalificação da Casa do Guarda da Fonte Santa, a aquisição diversos materiais de apoio às atividades desenvolvidas, por razões profissionais dos elementos que compunham os órgãos sociais o grupo ficou inativo.
                     </p>
@@ -46,14 +46,14 @@
 
             <!-- start experience section-->
             <div class="timeline" id="container_2016">
-                <div class="date-content">
+                <div class="date-content js--fadeInLeft">
                     <div class="date-outer">
                         <span class="date">
                         <span class="year">2016</span>
                         </span>
                     </div>
                 </div>
-                <div class="timeline-content">
+                <div class="timeline-content js--fadeInRight">
                     <p class="description">
                          Neste ano, praticantes de BTT de Manteigas, que integravam o grupo de Ciclismo da Associação Desportiva de Manteigas, decidiram reativar o primeiro Grupo de BTT formado em Portugal - Grupo de BTT de Manteigas, com o objectivo recuperar o dinamismo de outrora e potencializar a prática do ciclismo no Concelho de Manteigas.
                     </p>
@@ -63,14 +63,14 @@
 
             <!-- start experience section-->
             <div class="timeline" id="container_2016_2021">
-                <div class="date-content">
+                <div class="date-content js--fadeInRight">
                     <div class="date-outer">
                         <span class="date">
                         <span class="year1">2016|2021</span>
                         </span>
                     </div>
                 </div>
-                <div class="timeline-content">
+                <div class="timeline-content js--fadeInLeft">
                     <p class="description">
                         Desde a reativação, o grupo tem criado e realizado várias ações desportivas regionais, nacionais bem como internacionais. Algumas destas têm sido promovidas em parceria com as Autarquias locais, com a Associação Desportiva de Manteigas, com a Federação Portuguesa de Ciclismo e ainda com empresas que usualmente patrocinam provas desportivas. Graças a todo este dinamismo e atividades desenvolvidas, o número de praticantes de BTT tem aumentado no Concelho de Manteigas.
                     </p>
@@ -80,14 +80,14 @@
 
             <!-- start experience section-->
             <div class="timeline">
-                <div class="date-content">
+                <div class="date-content js--fadeInLeft">
                     <div class="date-outer">
                         <span class="date">
                         <span class="year">2021</span>
                         </span>
                     </div>
                 </div>
-                <div class="timeline-content" id="last_container">
+                <div class="timeline-content js--fadeInRight" id="last_container">
                     <p class="description">
                         No ano de 2021, os membros do grupo de BTT decidiram apostar na criação de um website onde pudessem publicitar os seus produtos, eventos e ainda, contar a história desta grande família. 
                     </p>
@@ -179,7 +179,7 @@
 </div>
 
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	window.onload = function () {
 
 		// Get an element's distance from the top of the page
@@ -266,4 +266,63 @@
 	   }
 	   
 	};
+</script>
+-->
+
+<script type="text/javascript">
+	
+	window.onload = function () {
+		$(function(){
+
+		  window.sr = ScrollReveal();
+
+		  if ($(window).width() < 768) {
+
+		    if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+		      $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+		    }
+
+		    sr.reveal('.js--fadeInRight', {
+		      origin: 'right',
+		      distance: '300px',
+		      easing: 'ease-in-out',
+		      duration: 800,
+		    });
+
+		  } else {
+		    
+		    sr.reveal('.js--fadeInLeft', {
+		      origin: 'left',
+		      distance: '300px',
+		      easing: 'ease-in-out',
+		      duration: 800,
+		    });
+
+		    sr.reveal('.js--fadeInRight', {
+		      origin: 'right',
+		      distance: '300px',
+		      easing: 'ease-in-out',
+		      duration: 800,
+		    });
+
+		  }
+		  
+		  sr.reveal('.js--fadeInLeft', {
+		      origin: 'left',
+		      distance: '300px',
+		      easing: 'ease-in-out',
+		      duration: 800,
+		    });
+
+		    sr.reveal('.js--fadeInRight', {
+		      origin: 'right',
+		      distance: '300px',
+		      easing: 'ease-in-out',
+		      duration: 800,
+		    });
+
+
+		});
+	}
+
 </script>
