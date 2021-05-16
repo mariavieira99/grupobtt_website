@@ -14,10 +14,13 @@
         index = 0;
       }
       var get = document.querySelector(".background");
-        get.style.backgroundImage = 'url("' + imageSources[index] + '"), url("' + imageSources[(index+1)%imageSources.length] + '")';
+      var value = (index+1)%imageSources.length;
+      var img1 = imageSources[index];
+      var img2 = imageSources[value];
+      get.style.backgroundImage = 'url("' + img1 + '"), url("' + img2 + '")';
     
       index++;
-    } , 3000);
+    } , 4000);
 
 </script>
 

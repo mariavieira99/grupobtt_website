@@ -259,7 +259,7 @@ html,body {
       transition:background-image  2.0s ease-in-out;
       -webkit-backface-visibility: hidden;
     -webkit-transform: scale(1);
-    -webkit-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;-webkit-transform:translate3d(0,0,0);
 }
 
 .background:after {
