@@ -226,7 +226,7 @@ html,body {
     font-family: Cairo;
 	font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 80px;
 	text-align: center;
 	color: #000000;
@@ -427,8 +427,8 @@ html,body {
 }
 
 .main-timeline .icon {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
@@ -606,6 +606,11 @@ html,body {
     .main-timeline .timeline:nth-child(2n) .timeline-content {
         padding: 10px 30px 10px 0
     }
+
+    .main-timeline .icon {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -643,11 +648,11 @@ html,body {
         top: 30%
     }
     .main-timeline .year {
-        font-size: 24px
+        font-size: 40px
     }
 
     .main-timeline .year1 {
-        font-size: 24px
+        font-size: 35px
     }
     .main-timeline .timeline-content,
     .main-timeline .timeline:nth-child(2n) .timeline-content {
@@ -1403,6 +1408,15 @@ address .text_contactos:hover {
         border-left: solid 25px transparent;
         border-right: solid 25px transparent;
     }
+
+    .main-timeline .description {
+        font-size: 20px;
+        line-height: 30px;
+
+        border-radius: 10px;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
 }
 
 
@@ -1443,6 +1457,11 @@ address .text_contactos:hover {
 
     .transform_os{
         transform: translateY(-50%);
+    }
+
+    .main-timeline .description {
+        font-size: 19px;
+        line-height: 25px;
     }
 }
 
@@ -1625,6 +1644,11 @@ address .text_contactos:hover {
         border-top: solid 30px rgba(254, 223, 70, 0.8);
         border-left: solid 25px transparent;
         border-right: solid 25px transparent;
+    }
+
+    .main-timeline .description {
+        font-size: 18px;
+        line-height: 22px;
     }
 }
 
