@@ -1,12 +1,12 @@
 
-<div class="background" id="image" style="background-image: asset-url('image_bg1_1.png'), asset-url('/assets/image_bg2_2.png');">
+<div class="background" id="image" style="background-image: asset-url('image_bg1_1.png'), asset-url('image_bg2_2.png');">
     <%= image_tag ("25anos_remove1.png"), class:"first_image" %>
 </div>
 
 
 
 <script>
-    var imageSources = ['/assets/image_bg2_1.png', '/assets/image_bg1_2.png', '/assets/image_bg3_1.png', '/assets/image_bg1_1.png', '/assets/image_bg2_2.png', '/assets/image_bg3_2.png', '/assets/image_bg4.png']
+    var imageSources = ['image_bg2_1.png', 'image_bg1_2.png', 'image_bg3_1.png', 'image_bg1_1.png', 'image_bg2_2.png', 'image_bg3_2.png', 'image_bg4.png']
 
     var index = 0;
     setInterval (function(){
@@ -17,7 +17,7 @@
       var value = (index+1)%imageSources.length;
       var img1 = imageSources[index];
       var img2 = imageSources[value];
-      get.style.backgroundImage = 'url("' + img1 + '"), url("' + img2 + '")';
+      get.style.backgroundImage = 'asset-url("' + img1 + '"), asset-url("' + img2 + '")';
     
       index++;
     } , 4000);
