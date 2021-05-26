@@ -259,7 +259,8 @@ html,body {
       transition:background-image  2.0s ease-in-out;
       -webkit-backface-visibility: hidden;
     -webkit-transform: scale(1);
-    -webkit-transform-style: preserve-3d;-webkit-transform:translate3d(0,0,0);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform:translate3d(0,0,0);
 }
 
 .background:after {
@@ -274,6 +275,24 @@ html,body {
     border-left: solid 40px transparent;
     border-right: solid 40px transparent;
 }
+
+.image_show_phone{
+    display: none;
+}
+
+.show_phone:after{
+    content:'';
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: solid 50px rgba(254, 223, 70, 0.8);
+    border-left: solid 40px transparent;
+    border-right: solid 40px transparent;
+}
+
 
 
 .first_image{
@@ -1056,10 +1075,37 @@ address .text_contactos:hover {
     .logo1{
         display: none;
     }
-    .background:after {
+    
+    .background {
+        display: none;
+    }
+
+    .show_phone{
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 500px;
+        width: auto;
+    }
+
+    .show_phone:after {
         border-top: solid 40px rgba(254, 223, 70, 0.8);
         border-left: solid 30px transparent;
         border-right: solid 30px transparent;
+    }
+
+    .image_show_phone{
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+
     }
 
     .percursos{
