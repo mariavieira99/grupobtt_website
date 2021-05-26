@@ -9,24 +9,90 @@
 
   <div class="container">
     <div class="row">
-      <% @produtos.each do |produto| %>
-        <div class="col-12 col-md-6 product">
-              <%= link_to home_contactos_path, :action => 'go' do %>
-                  <%= image_tag (produto.image), class:"produto" %>
-                  <!--<td><%= link_to 'Show', produto %></td>
-                  <td><%= link_to 'Edit', edit_produto_path(produto) %></td>
-                  <td><%= link_to 'Destroy', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-              <% end %>
+      <div class="col-12 col-md-6 product">
+        <%= link_to home_contactos_path, :action => 'go' do %>
+          <%= image_tag ("Produtos/Casaco_com_Capuz.png"), class:"produto" %>
+        <% end %>
+        <p class="produto_nome">
+          Casaco com Capuz   
+        </p>
+      </div>
 
-          <p class="produto_nome">
-            <%= produto.nome %>   
-          </p>
-        </div>
-      <% end %>
+
+      <div class="col-12 col-md-6 product">
+        <%= link_to home_contactos_path, :action => 'go' do %>
+          <%= image_tag ("Produtos/T-shirt.png"), class:"produto" %>
+        <% end %>
+        <p class="produto_nome">
+          T-shirt  
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 product">
+        <%= link_to home_contactos_path, :action => 'go' do %>
+          <%= image_tag ("Produtos/Casaco_de_Equipamento.png"), class:"produto" %>
+        <% end %>
+        <p class="produto_nome">
+          Casaco de Equipamento 
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 product">
+        <%= link_to home_contactos_path, :action => 'go' do %>
+          <%= image_tag ("Produtos/Equipamento1.png"), class:"produto" %>
+        <% end %>
+        <p class="produto_nome">
+          Equipamento 1
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 product">
+        <%= link_to home_contactos_path, :action => 'go' do %>
+          <%= image_tag ("Produtos/Equipamento2.png"), class:"produto" %>
+        <% end %>
+        <p class="produto_nome">
+          Equipamento 2
+        </p>
+      </div>
+
+       <div class="col-12 col-md-6 product">
+        <%= link_to home_contactos_path, :action => 'go' do %>
+          <%= image_tag ("Produtos/Equipamento_Trail.png"), class:"produto" %>
+        <% end %>
+        <p class="produto_nome">
+          Equipamento Trail
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 product">
+        <%= link_to home_contactos_path, :action => 'go' do %>
+          <%= image_tag ("Produtos/Bidon.png"), class:"produto" %>
+        <% end %>
+        <p class="produto_nome">
+          Bidon
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 product">
+        <%= link_to home_contactos_path, :action => 'go' do %>
+          <%= image_tag ("Produtos/Meias.png"), class:"produto" %>
+        <% end %>
+        <p class="produto_nome">
+          Meias
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 product">
+        <%= link_to home_contactos_path, :action => 'go' do %>
+          <%= image_tag ("Produtos/Calca_Pirata.png"), class:"produto" %>
+        <% end %>
+        <p class="produto_nome">
+          Calça Berlingo
+        </p>
+      </div>
+
+
     </div>
   </div>
   
 </div>
-
-
-<!--<%= link_to 'New Produto', new_produto_path %>-->
